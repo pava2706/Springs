@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: teal;
+}
+
+p {
+	font-family: cursive;
+	color: yellow;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#form {
+	background-color: silver;
+	height: 70px;
+	font-size: 20px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.btn{
+	background-color: green;
+	border-radius: 20px;
+	color: white;
+	width: 200px;;
+	text-align: center;
+	font-size: 30px;
+
+}
+#n, h1 {
+	color: rgb(red blue green);
+	background-color: silver;
+	font-size: 40px;
+	font-family: monospace;
+	letter-spacing: 10px;
+	text-shadow: rgb(red white orange);
+}
+
+a{
+color:yellow;
+	font-size: 40px;
+	background-color: green;
+	border-radius:20px;
+	width: 100px;
+}
+
+</style>
+</head>
+<body>
+	
+		<marquee  behavior="scroll" direction="right" scrollamount="15" id="n">
+			<h1>KARNATAKA SECONDARY EXAMINATION BOARD</h1>
+		</marquee>
+
+	<p align="center">Student Login Page</p>
+	
+	<form action="login">
+		<table id="form" align="center">
+			<tr>
+				<th>Register_No :</th>
+				<td><input type="text" placeholder="Insert no" name="regno"
+					required></td>
+			</tr>
+
+			<tr>
+				<th>DOB :</th>
+				<td><input type="date" name="dob" placeholder="DOB " required></td>
+			</tr>
+
+		</table>
+		<br>
+                  <nav align="center"><button type="submit" class="btn" >View Result</button></nav>		
+                   <button> <a href="homepage.html">Back</a></button>
+	</form>
+	
+
+</html>
