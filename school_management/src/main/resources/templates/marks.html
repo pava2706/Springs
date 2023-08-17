@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+body{
+background-color: silver;
+}
+h1{
+color:yellow;
+letter-spacing:2px;
+font-size:60px;
+padding-left: 450px;
+text-decoration: underline;
+}
+.btn{
+color:white;
+border-radius: 5px;
+font-size: 25px;
+padding-left: 10px;
+background-color: navy;
+}
+.btn:hover{
+background-color:green;
+}
+.btn1{
+color:white;
+border-radius: 5px;
+font-size: 25px;
+padding-left: 10px;
+background-color: maroon;
+}
+.btn1:hover{
+background-color: red;
+}
+.d{
+padding-left: 80px;
+}
+b{
+font-size: 25px;
+}
+.msg{
+font-size: 30px;
+letter-spacing:2px;
+color: red;
+}
+</style>
+<body>
+<h1>MARKS SHEET</h1>
+<form  th:action="@{/addmarks}" method="post">
+		<center>	 <div >
+				<label for="id"><b>Std_id:-</b></label> <input
+					type="number" name="id" required="required">
+						<br><br>
+				<label for="Kan_marks"><b>Kan_marks:-</b></label> <input
+					type="text" name="Kan_marks" required="required">
+			<br><br>
+			
+				<label for="Eng_marks"><b>Eng_marks:-</b></label> <input
+					type="text" name="Eng_marks" required="required">
+		
+			<br><br>
+		
+				<label for="Maths_marks"><b>Maths_marks:-</b></label> <input
+					type="text" name="Maths_marks" required="required">
+		
+			<br><br>
+			
+				<label for="Hin_marks"><b>Hin_marks:-</b></label> <input
+					type="text" name="Hin_marks" required="required">
+		
+			<br><br>
+			
+				<label for="Science_marks"><b>Science_marks:-</b></label> <input
+					type="text" name="Science_marks" required="required">
+			
+			<br><br>
+			
+				<label for="Social_marks"><b>Social_marks:-</b></label> <input
+					type="text" name="Social_marks" required="required">
+			
+			<br><br>
+			</div>
+			<div class="d">
+				<button type="submit" class="btn">Add</button>
+				<button type="reset" class="btn1">Cancel</button>
+				</div>
+			</center>
+		</form>
+		<b th:text="${msg}" class="msg">
+</body>
+</body>
+</html>

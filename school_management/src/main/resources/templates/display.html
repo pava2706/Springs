@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xlmns:th="https://www.thymeleaf.com">
+<head>
+<meta charset="ISO-8859-1">
+<title>Display_Student</title>
+</head>
+<style>
+body{
+background-color: olive;
+}
+.tab{
+height: 60px;
+width: 50px;
+color: white;
+letter-spacing: 2px;
+font-size: 40px;
+}
+div{
+padding-top: 10px;
+}
+h1{
+color: maroon;
+letter-spacing: 5px;
+font-family: cursive;
+font-size: 80px;
+}
+b{
+color: purple;
+width: 60px;
+}
+</style>
+<body>
+<div>
+<center>
+<h1>Student Details</h1>
+
+<table style="border: 5px solid green;" border="10px" cellspacing="0px"
+			cellpadding="10px" class="tab">
+    <tr>
+      <th>Std_Id</th>
+      <td><b th:text="${std1}"></b></td>
+    </tr>
+      <tr>
+      <th>Std_Name</th>
+      <td><b th:text="${std2}"></b></td>
+    </tr>
+    <tr>
+      <th>Taecher_Name</th>
+      <td><b th:text="${tech}"></b></td>
+    </tr>
+    <tr>
+      <th>Kannada</th>
+      <td><b th:text="${sub1}"></b></td>
+    </tr>
+    <tr>
+      <th>English</th>
+      <td><b th:text="${sub2}"></b></td>
+    </tr>
+    <tr>
+      <th>Hindi</th>
+      <td><b th:text="${sub3}"></b></td>
+    </tr>
+    <tr>
+      <th>Mathematics</th>
+      <td><b th:text="${sub4}"></b></td>
+    </tr>
+    <tr>
+      <th>Science</th>
+      <td><b th:text="${sub5}"></b></td>
+    </tr>
+    <tr>
+      <th>Social</th>
+      <td><b th:text="${sub6}"></b></td>
+    </tr>
+    <tr>
+      <th>Total_Marks</th>
+      <td><b th:text="${total}"></b></td>
+    </tr>
+  </table>
+  </center>
+  </div>
+</body>
+</html>

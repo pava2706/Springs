@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xlmns:th="https://www.thymeleaf.com">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<style>
+body{
+background-color: silver;
+}
+.tab{
+height: 60px;
+width: 50px;
+color: white;
+letter-spacing: 2px;
+font-size: 40px;
+}
+div{
+padding-top: 10px;
+}
+h1{
+color: maroon;
+letter-spacing: 5px;
+font-family: cursive;
+font-size: 80px;
+}
+b{
+color: purple;
+width: 60px;
+}
+.msg{
+font-size: 30px;
+letter-spacing:2px;
+color: red;
+}
+</style>
+<center>
+<h1 th:text="${s}" style="color: orange;font-size: 50px;letter-spacing: 2px;"></h1>
+<table style="border: 5px solid green;" border="10px" cellspacing="0px"
+			cellpadding="10px" class="tab">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+    </tr>
+    <tr th:each="b :${std}">
+      <td><b th:text="${b.id}"></b></td>
+      <td><b th:text="${b.name}"></b></td>
+    </tr>
+  </table>
+  <br><br>
+  <b th:text="${msg}" class="msg">
+  </center>
+</body>
+</html>

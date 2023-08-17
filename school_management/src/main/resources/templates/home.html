@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<style>
+body{
+background-image: url("https://cdn.pixabay.com/photo/2017/12/22/08/01/book-3033196_640.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed;
+}
+marquee{
+ 
+font-size: 80px;
+font-style: italic;
+color: rgb(red white green);
+}
+h1{
+color:teal;
+padding-left:40%;
+font-family: fantasy;
+letter-spacing: 3px;
+font-size: 50px;
+text-decoration: underline;
+}
+b{
+font-size: 30px;
+letter-spacing: 2px;
+color: maroon;
+text-decoration: underline;
+}
+.spa{
+display: inline-block;
+}
+.std{
+font-size: 30px;
+padding-left:40px;
+padding-bottom:20px; 
+}
+.tech{
+font-size: 30px;
+padding-top:-30px;
+padding-left:450px;
+}
+.mark{
+font-size: 30px;
+padding-left:850px;
+padding-bottom: 270px;
+}
+a{
+text-decoration: none;
+text-align: center;
+text-overflow: ellipsis;
+color: activeborder;
+}
+
+</style>
+<body>
+<div><marquee scrollamount="20px" direction="left">WELCOME TO SCHOOL MANAGEMENT PORTAL</marquee></div>
+<hr>
+<h1>LIST OF OPTIONS</h1>
+<span class="spa">
+<div class="std">
+<b>Student</b>
+<li><a href="add_student">add_student</a></li>
+<li><a href="update_student">update_student</a></li>
+<li><a href="delete_student">delete_student</a></li>
+<li><a href="read_student">read_student</a></li>
+</div>
+<div class="tech">
+<b>Teacher</b>
+<li><a href="add_teacher">add_teacher</a></li>
+<li><a href="update_teacher">update_teacher</a></li>
+<li><a href="delete_teacher">delete_teacher</a></li>
+<li><a href="read_teacher">read_teacher</a></li>
+</div>
+<div class="mark">
+<b>Marks</b>
+<li><a href="add_marks">add_marks</a></li>
+<li><a href="std_id">DisplayStudentDetails</a></li>
+</div>
+</span>
+</body>
+</html>
